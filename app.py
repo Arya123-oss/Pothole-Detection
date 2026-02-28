@@ -9,7 +9,7 @@ from PIL import Image
 st.set_page_config(layout="wide")
 
 # Initialize the YOLO model and tracker
-model = YOLO("runs/segment/train/weights/best_ncnn_model")
+model = YOLO("yolov8n.pt")
 tracker = sv.ByteTrack()
 mask_annotator = sv.MaskAnnotator()
 
